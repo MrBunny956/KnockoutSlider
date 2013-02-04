@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<link href="css/KnockoutSlider.css" rel="stylesheet" type="text/css"></link>
+	<script data-main="main" src="Javascript/Depencies/require-2.0.2.min.js"></script>
+</head>
+<body style="overflow:hidden; background-color: gray;">
+	<div id="con" >
+		<div id="page0" class="page" data-bind="foreach: page1, style:{paddingLeft:wPadding()}" class="page">
+			<div class="span1">
+				<div style="overflow: Hidden; height: 85%;">
+					<img style="width: 100%" data-bind="attr:{src: icon}" >
+				</div>
+				<span class="titleText" data-bind="text: title" ></span>
+			</div>
+		</div>
+		<div id="page1" class="page" data-bind="foreach: page2, style:{paddingLeft:wPadding()}" class="page">
+			<div class="span1">
+				<div style="overflow: Hidden; height: 85%;">
+					<img style="width: 100%" data-bind="attr:{src: icon}" >
+				</div>
+				<span class="titleText" data-bind="text: title" ></span>
+			</div>
+		</div>
+		<div id="page2" class="page"  data-bind="foreach: page3, style:{paddingLeft:wPadding()}" class="page" >
+			<div class="span1">
+				<div style="overflow: Hidden; height: 85%;">
+					<img style="width: 100%" data-bind="attr:{src: icon}" >
+				</div>
+				<span class="titleText" data-bind="text: title" ></span>
+			</div>
+		</div>
+		<div id="page3" class="page" data-bind="foreach: page4, style:{paddingLeft:wPadding()}" class="page">
+			<div class="span1">
+				<div style="overflow: Hidden; height: 85%;">
+					<img style="width: 100%" data-bind="attr:{src: icon}" >
+				</div>
+				<span class="titleText" data-bind="text: title" ></span>
+			</div>
+		</div>
+		<div class="arrow_back sliderNav" data-bind="click: pageLeft" ></div>
+		<div class="arrow_forward sliderNav" data-bind="click: pageRight" ></div>
+	</div>
+</body>

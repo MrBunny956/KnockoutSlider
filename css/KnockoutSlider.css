@@ -1,0 +1,52 @@
+html, body
+{
+	width: 100%;
+	height: 100%;
+}
+.span1
+{
+	width: 240px;
+	height: 160px;
+	margin: 2.5px 2.5px;
+	float: left;
+	overflow: hidden;
+	box-shadow: 2px 2px 4px #000000;
+}
+.slider {
+	width: 400%; /* This is for four pages. */
+	height: 100%;
+}
+#page0 {
+	display: block;
+}
+.page {
+	width: 100%;
+	float: left;
+	position: absolute;
+	display: none;
+}
+.sliderNav {
+	bottom: 10px;
+	width: 46px;
+	height: 28px;
+	position: absolute;
+}
+.pageRight {
+	left: 60px;
+}
+#con {
+	width: 100%;
+	height: 100%;
+}
+.info {
+	position: absolute;
+	background-color: gray;
+}
+.arrow_back{
+	background: url(../css/left_arrow.png) no-repeat;
+	left: 1px;
+}
+.arrow_forward{
+	background: url(../css/right_arrow.png) no-repeat;
+	right: 1px;
+}
